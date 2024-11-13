@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanças Inteligentes</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="funçõe.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Finanças Inteligentes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="categoria.html">Categorias</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Bem-vindo ao Finanças Inteligentes</h2>
+            <p>Estamos empolgados por você estar aqui! Nosso objetivo é ajudá-lo a conquistar a independência financeira e viver uma vida mais tranquila e segura. Sabemos que navegar pelo mundo das finanças pessoais pode ser desafiador, mas estamos aqui para tornar essa jornada mais fácil e informativa.
+
+                No Finanças Inteligentes, acreditamos que a educação financeira é a chave para um futuro financeiro próspero. Nossos artigos são cuidadosamente elaborados para oferecer dicas práticas, estratégias eficazes e insights valiosos sobre como gerenciar seu dinheiro de maneira inteligente. Queremos que você se sinta capacitado a tomar decisões financeiras informadas que beneficiem você e sua família.
+                
+                Seja você um estudante começando a lidar com suas finanças, um profissional buscando otimizar seu planejamento financeiro, ou alguém se preparando para a aposentadoria, temos conteúdo relevante para todos os níveis de experiência. Nossas categorias principais - Economia Doméstica, Investimentos, Planejamento Financeiro, Crédito e Dívida, e Aposentadoria - cobrem uma ampla gama de tópicos essenciais para ajudá-lo a alcançar seus objetivos financeiros.
+                
+                Acompanhe nossos artigos e descubra como pequenas mudanças podem fazer uma grande diferença na sua vida financeira. Junte-se a nós nessa jornada e vamos construir juntos um futuro financeiro mais seguro e próspero.
+                
+                Obrigado por visitar o Finanças Inteligentes. Esperamos que você aproveite o nosso conteúdo e que ele seja útil em sua caminhada rumo à estabilidade financeira.</p>
+                <h1>Calculadoras a abaixo</h1>
+            <p id="currentDate"></p>
+        </section>
+
+        <section id="savings-calculator">
+            <h3>Calculadora de Poupança</h3>
+            <label for="income">Renda Mensal:</label>
+            <input type="number" id="income">
+            <label for="expenses">Despesas Mensais:</label>
+            <input type="number" id="expenses">
+            <button onclick="calculateSavings()">Calcular Poupança</button>
+            <p id="savingsResult"></p>
+        </section>
+
+        <section id="artigo">
+            <h3>Artigo do Blog</h3>
+            <button onclick="toggleArticleVisibility('myArticle')">Mostrar/Esconder Artigo</button>
+            <article id="myArticle" style="display: none;">
+                <p>Como Criar e Manter um Orçamento Doméstico Eficaz
+                Manter um orçamento doméstico eficaz é um passo essencial para alcançar a independência financeira e garantir uma vida tranquila e segura. Um orçamento bem elaborado ajuda você a controlar seus gastos, economizar dinheiro e planejar o futuro. Neste artigo, vamos explorar os principais passos para criar e manter um orçamento doméstico eficaz.
+                
+                Passo 1: Avalie Suas Finanças Atuais
+                O primeiro passo para criar um orçamento é avaliar sua situação financeira atual. Liste todas as suas fontes de renda, incluindo salários, rendimentos de investimentos e qualquer outra receita. Em seguida, faça um levantamento de todas as suas despesas, como aluguel, contas de serviços públicos, alimentação, transporte e entretenimento. Essa avaliação inicial é fundamental para entender onde você está gastando seu dinheiro.
+                
+                Passo 2: Estabeleça Metas Financeiras
+                Após avaliar suas finanças, é importante estabelecer metas financeiras claras e realistas. Essas metas podem incluir a criação de um fundo de emergência, a quitação de dívidas, a economia para a compra de uma casa ou carro, ou o investimento para a aposentadoria. Ter metas bem definidas ajudará a manter o foco e a motivação para seguir o seu orçamento.
+                
+                Passo 3: Crie um Plano de Ação
+                Com suas metas financeiras em mente, é hora de criar um plano de ação. Divida suas despesas em categorias, como moradia, alimentação, transporte e lazer, e estabeleça um limite de gastos para cada categoria. Use ferramentas de orçamento, como planilhas, aplicativos financeiros ou softwares específicos, para monitorar suas despesas e garantir que você esteja dentro do seu orçamento.
+                
+                Passo 4: Monitore Seus Gastos
+                Monitorar seus gastos é essencial para manter o controle do seu orçamento. Anote todas as suas despesas diárias, seja em um aplicativo de finanças, em uma planilha ou em um caderno. Revise seus gastos regularmente para identificar áreas onde você pode economizar. Pequenas mudanças, como cortar gastos supérfluos ou negociar tarifas mais baixas, podem fazer uma grande diferença no seu orçamento.
+                
+                Passo 5: Ajuste Seu Orçamento Conforme Necessário
+                Um orçamento eficaz deve ser flexível e adaptável. À medida que suas circunstâncias financeiras mudam, ajuste seu orçamento para refletir essas mudanças. Se você receber um aumento salarial, por exemplo, pode destinar uma parte do valor adicional para poupança ou investimentos. Da mesma forma, se suas despesas aumentarem, será necessário revisar e ajustar seus limites de gastos.
+                
+                Passo 6: Reavalie Suas Metas Periodicamente
+                Reavaliar suas metas financeiras periodicamente é importante para garantir que você esteja no caminho certo. Revise suas metas a cada seis meses ou sempre que ocorrer uma mudança significativa em suas finanças. Isso permitirá que você ajuste suas estratégias e continue a progredir em direção aos seus objetivos financeiros.</p>
+            </article>
+        </section>
+        </section>
+
+        <section id="Publicação">
+            <h3>Próxima Publicação</h3>
+            <p id="countdown"></p>
+        </section>
+
+        <section id="conversor">
+            <h3>Conversor de Moeda</h3>
+            <label for="brl">Valor em BRL:</label>
+            <input type="number" id="brl">
+            <button onclick="convertCurrency()">Converter</button>
+            <p id="currencyResult"></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Finanças Inteligentes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
